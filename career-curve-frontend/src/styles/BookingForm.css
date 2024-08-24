@@ -1,0 +1,32 @@
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    justify-content: center;
+  }
+  
+  .booking-form h3 {
+    margin: 0 0 10px;
+  }
+  
+  .booking-form label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  
+  .booking-form input[type="text"], 
+  .booking-form input[type="number"] {
+    width: 100%;
+  }
+  
+  .booking-form button {
+    margin-top: 10px;
+  }
+  
