@@ -51,19 +51,19 @@ const MentorList = () => {
                             <div>
                                 <strong>Availability:</strong>
                                 <ul>
-                                    {mentor.availability.length > 0 ? (
+                                    {Array.isArray(mentor.availability) && mentor.availability.length > 0 ? (
                                         mentor.availability.map((slot, index) => (
                                             <li key={index}>{slot}</li>
                                         ))
                                     ) : (
-                                        <li>No availability listed</li>
+                                        <li>No slots available</li>
                                     )}
                                 </ul>
                             </div>
                             <div>
                                 <strong>Areas of Expertise:</strong>
                                 <ul>
-                                    {mentor.areas_of_expertise.length > 0 ? (
+                                    {Array.isArray(mentor.areas_of_expertise) && mentor.areas_of_expertise.length > 0 ? (
                                         mentor.areas_of_expertise.map((area, index) => (
                                             <li key={index}>{area}</li>
                                         ))
